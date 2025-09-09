@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arcade Games</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #111;
+color: white;
+text-align: center;
+padding: 50px;
+}
+h1 {
+font-size: 3rem;
+color: #00ff00;
+text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.8);
+}
+.game-links {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+margin-top: 20px;
+}
+.game-link {
+padding: 20px;
+background: #222;
+border-radius: 10px;
+cursor: pointer;
+text-align: center;
+box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+transition: transform 0.2s ease;
+}
+.game-link:hover {
+transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+<h1>Retro Arcade Games</h1>
+<div class="game-links">
+<div class="game-link" onclick="location.href='snake.html'">Snake</div>
+<div class="game-link" onclick="location.href='pong.html'">Pong</div>
+<div class="game-link" onclick="location.href='breakout.html'">Breakout</div>
+<div class="game-link" onclick="location.href='space-invaders.html'">Space Invaders</div>
+</div>
+</body>
+</html>
